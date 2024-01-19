@@ -12,6 +12,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 .btn {
@@ -39,11 +40,13 @@ a {
   letter-spacing: 2px;
 }
 
+/* Navbar */
 #navbar {
   width: 100%;
-  background-color: red;
   background: #111;
   color: #eee;
+  height: 80px;
+  position: fixed;
 }
 
 #navbar-container {
@@ -70,9 +73,8 @@ a {
 }
 
 /* Showcase */
-
 #showcase {
-  height: 95vh;
+  height: 100vh;
   display: flex;
   background: url("/img/showcase.jpg") no-repeat center center/cover;
   justify-content: center;
@@ -105,7 +107,7 @@ a {
   padding: 50px;
 }
 
-.clients-container {
+#clients-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
@@ -146,7 +148,99 @@ a {
 }
 
 /* Product */
-
 #product {
   width: 100%;
+  padding: 50px;
+}
+
+#product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#items {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#items .item {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 15px 0;
+  font-size: 1.2rem;
+}
+
+#items .item p {
+  margin-left: 12px;
+}
+
+/* Testimonials */
+#testimonials {
+  width: 100%;
+  background: #222;
+  color: #eee;
+  padding: 50px;
+}
+
+#testimonials-container {
+  width: 80%;
+  color: #eee;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial .testimonial-image {
+  height: 200px;
+  width: auto;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  background: #333;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+/* Gallery */
+#gallery {
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+}
+
+#gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+}
+
+.gallery-image {
+  display: inline-block;
+  width: 420px;
+  height: 280px;
+  border-radius: 5px;
+}
+
+/* Footer */
+#footer {
+  background: #222;
+  color: #eee;
+  padding: 30px;
+  text-align: center;
+}
+
+#footer p:nth-child(2) {
+  margin-top: 6px;
 }

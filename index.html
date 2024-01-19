@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 1280px)" href="/css/mobile.css" />
     <title>IT Solutions</title>
   </head>
   <body>
@@ -11,9 +12,9 @@
       <div id="navbar-container">
         <h1 class="logo">IT Solutions</h1>
         <ul id="navbar-items">
-          <li>Início</li>
-          <li>Sobre</li>
-          <li>Galeria</li>
+          <li><a href="#showcase">Início</a></li>
+          <li><a href="#clients">Sobre</a></li>
+          <li><a href="#gallery">Galeria</a></li>       
         </ul>
       </div>
     </nav>
@@ -30,7 +31,7 @@
     <!-- About -->
     <section id="clients">
       <div class="headline">Nossos clientes</div>
-      <div class="clients-container">
+      <div id="clients-container">
         <img src="/img/netflix.png" class="client" alt="" />
         <img src="/img/google.png" class="client" alt="" />
         <img src="/img/apple.png" class="client" alt="" />
@@ -64,48 +65,47 @@
             Voluptas pariatur facilis repellendus magni!
           </p>
         </div>
-        <div class="feature"></div>
-        <div class="feature"></div>
-        <div class="feature"></div>
       </div>
     </section>
     <section id="product">
       <div class="headline">Nosso produto</div>
-      <div id="product-container"></div>
-      <img src="/img/iphone-x.png" alt="" class="iphone-x" />
-      <div id="items">
-        <div class="item">
-          <li class="fas fa-map-marked fa-2x color-primary"></li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
-            saepe incidunt! Aspernatur atque similique aperiam!
-          </p>
-        </div>
-        <div class="item">
-          <li class="fas fa-users fa-2x color-primary"></li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
-            saepe incidunt! Aspernatur atque similique aperiam!
-          </p>
-        </div>
-        <div class="item">
-          <li class="fas fa-glass-cheers fa-2x color-primary"></li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
-            saepe incidunt! Aspernatur atque similique aperiam!
-          </p>
-        </div>
-        <div class="item">
-          <li class="fas fa-book-open fa-2x color-primary"></li>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
-            saepe incidunt! Aspernatur atque similique aperiam!
-          </p>
+      <div id="product-container">
+        <img src="/img/iphone-x.png" alt="" class="iphone-x" />
+        <div id="items">
+          <div class="item">
+            <li class="fas fa-map-marked fa-2x color-primary"></li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              saepe incidunt! Aspernatur atque similique aperiam!
+            </p>
+          </div>
+          <div class="item">
+            <li class="fas fa-users fa-2x color-primary"></li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              saepe incidunt! Aspernatur atque similique aperiam!
+            </p>
+          </div>
+          <div class="item">
+            <li class="fas fa-glass-cheers fa-2x color-primary"></li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              saepe incidunt! Aspernatur atque similique aperiam!
+            </p>
+          </div>
+          <div class="item">
+            <li class="fas fa-book-open fa-2x color-primary"></li>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia,
+              saepe incidunt! Aspernatur atque similique aperiam!
+            </p>
+          </div>
         </div>
       </div>
     </section>
     <section id="testimonials">
-      <div class="headline">
+      <div class="headline">O que acham de nós</div>
+      <div id="testimonials-container">
         <div class="testimonial">
           <img src="/img/person-1.jpeg" alt="" class="testimonial-image" />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
@@ -137,12 +137,15 @@
       </p>
       <p>Feito por IT Solution</p>
     </footer>
+
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/85209c7cf5.js"
       crossorigin="anonymous"
     ></script>
 
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
